@@ -153,6 +153,7 @@ let param1 = prompt("Enter the First Name:  ")
 let param2 = prompt("Enter the Last Name:  ")
 findContact(param1, param2)
 
+//UC5
 function deleteContact(fname, lname){
     let contactToDelete = findContact(fname. lname)
     addressBookArray.pop(contactToDelete)
@@ -163,6 +164,11 @@ let param3 = prompt("Enter the First Name (contact to delete):  ")
 let param4 = prompt("Enter the Last Name (contact to delete):  ")
 deleteContact(param3, param4)
 
+//UC6
+function count(counter){
+    return counter + 1;
+}
+console.log("Total Number of Contacts: " + addressBookArray.reduce(count, 0))
 
 
 
